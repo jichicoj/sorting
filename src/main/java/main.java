@@ -36,69 +36,104 @@ public class main {
                     generateNumbers(quantity);
                     break;
                 case 2:
-                    ArrayList<Numbers> numbers = readFile();
+                    int n = 10;
+                    while (n <= 3000) {
+                        generateNumbers(n);
 
-                    long nano_startTime = System.nanoTime();
-                    ArrayList<Numbers> test = sorts.gnomeSort(numbers);
-                    long nano_endTime = System.nanoTime();
-                    System.out.println("Tiempo en ordenar con datos desordenados: " + (nano_endTime - nano_startTime));
+                        ArrayList<Numbers> numbers = readFile();
 
-                    nano_startTime = System.nanoTime();
-                    test = sorts.gnomeSort(test);
-                    nano_endTime = System.nanoTime();
-                    System.out.println("Tiempo en ordenar con datos ordenados: " + (nano_endTime - nano_startTime));
+                        long nano_startTime = System.nanoTime();
+                        ArrayList<Numbers> test = sorts.gnomeSort(numbers);
+                        long nano_endTime = System.nanoTime();
+                        System.out.println("Tiempo en ordenar con datos desordenados: " + (nano_endTime - nano_startTime));
+
+                        nano_startTime = System.nanoTime();
+                        test = sorts.gnomeSort(test);
+                        nano_endTime = System.nanoTime();
+                        System.out.println("Tiempo en ordenar con datos ordenados: " + (nano_endTime - nano_startTime));
+
+                        n += 55;
+                    }
                     break;
                 case 3:
-                    ArrayList<Numbers> numbers1 = readFile();
+                    int n1 = 10;
+                    while (n1 <= 3000) {
+                        generateNumbers(n1);
 
-                    long nano_startTime1 = System.nanoTime();
-                    ArrayList<Numbers> test1 = sorts.mergeSort(numbers1);
-                    long nano_endTime1 = System.nanoTime();
-                    System.out.println("Tiempo en ordenar con datos desordenados: " + (nano_endTime1 - nano_startTime1));
+                        ArrayList<Numbers> numbers1 = readFile();
 
-                    nano_startTime1 = System.nanoTime();
-                    test1 = sorts.mergeSort(test1);
-                    nano_endTime1 = System.nanoTime();
-                    System.out.println("Tiempo en ordenar con datos ordenados: " + (nano_endTime1 - nano_startTime1));
+                        long nano_startTime1 = System.nanoTime();
+                        ArrayList<Numbers> test1 = sorts.mergeSort(numbers1);
+                        long nano_endTime1 = System.nanoTime();
+                        System.out.println("Tiempo en ordenar con datos desordenados: " + (nano_endTime1 - nano_startTime1));
+
+                        nano_startTime1 = System.nanoTime();
+                        test1 = sorts.mergeSort(test1);
+                        nano_endTime1 = System.nanoTime();
+                        System.out.println("Tiempo en ordenar con datos ordenados: " + (nano_endTime1 - nano_startTime1));
+
+                        n1 += 55;
+                    }
                     break;
                 case 4:
-                    ArrayList<Numbers> numbers2 = readFile();
+                    int n2 = 10;
+                    while (n2 <= 3000) {
+                        generateNumbers(n2);
 
-                    long nano_startTime2 = System.nanoTime();
-                    ArrayList<Numbers> test2 = sorts.quickSortMethod(numbers2);
-                    long nano_endTime2 = System.nanoTime();
-                    System.out.println("Tiempo en ordenar con datos desordenados: " + (nano_endTime2 - nano_startTime2));
+                        ArrayList<Numbers> numbers2 = readFile();
 
-                    nano_startTime2 = System.nanoTime();
-                    test2 = sorts.quickSortMethod(test2);
-                    nano_endTime2 = System.nanoTime();
-                    System.out.println("Tiempo en ordenar con datos ordenados: " + (nano_endTime2 - nano_startTime2));
+                        long nano_startTime2 = System.nanoTime();
+                        ArrayList<Numbers> test2 = sorts.quickSortMethod(numbers2);
+                        long nano_endTime2 = System.nanoTime();
+                        System.out.println("Tiempo en ordenar con datos desordenados: " + (nano_endTime2 - nano_startTime2));
+
+                        nano_startTime2 = System.nanoTime();
+                        test2 = sorts.quickSortMethod(test2);
+                        nano_endTime2 = System.nanoTime();
+                        System.out.println("Tiempo en ordenar con datos ordenados: " + (nano_endTime2 - nano_startTime2));
+
+                        n2 += 55;
+                    }
                     break;
                 case 5:
-                    ArrayList<Numbers> numbers3 = readFile();
+                    int n3 = 10;
+                    while (n3 <= 3000) {
+                        generateNumbers(n3);
 
-                    long nano_startTime3 = System.nanoTime();
-                    ArrayList<Numbers> test3 = sorts.radixMethod(numbers3);
-                    long nano_endTime3 = System.nanoTime();
-                    System.out.println("Tiempo en ordenar con datos desordenados: " + (nano_endTime3 - nano_startTime3));
+                        ArrayList<Numbers> numbers3 = readFile();
 
-                    nano_startTime3 = System.nanoTime();
-                    test3 = sorts.radixMethod(test3);
-                    nano_endTime3 = System.nanoTime();
-                    System.out.println("Tiempo en ordenar con datos ordenados: " + (nano_endTime3 - nano_startTime3));
+                        long nano_startTime3 = System.nanoTime();
+                        ArrayList<Numbers> test3 = sorts.radixMethod(numbers3);
+                        long nano_endTime3 = System.nanoTime();
+                        System.out.println("Tiempo en ordenar con datos desordenados: " + (nano_endTime3 - nano_startTime3));
+
+                        nano_startTime3 = System.nanoTime();
+                        test3 = sorts.radixMethod(test3);
+                        nano_endTime3 = System.nanoTime();
+                        System.out.println("Tiempo en ordenar con datos ordenados: " + (nano_endTime3 - nano_startTime3));
+
+                        n3 += 55;
+                    }
                     break;
                 case 6:
-                    ArrayList<Numbers> numbers4 = readFile();
+                    int n4 = 10;
+                    while (n4 <= 3000) {
+                        generateNumbers(n4);
 
-                    long nano_startTime4 = System.nanoTime();
-                    ArrayList<Numbers> test4 = sorts.bubbleSort(numbers4);
-                    long nano_endTime4 = System.nanoTime();
-                    System.out.println("Tiempo en ordenar con datos desordenados: " + (nano_endTime4 - nano_startTime4));
+                        ArrayList<Numbers> numbers4 = readFile();
 
-                    nano_startTime4 = System.nanoTime();
-                    test4 = sorts.bubbleSort(test4);
-                    nano_endTime4 = System.nanoTime();
-                    System.out.println("Tiempo en ordenar con datos ordenados: " + (nano_endTime4 - nano_startTime4));
+                        long nano_startTime4 = System.nanoTime();
+                        ArrayList<Numbers> test4 = sorts.bubbleSort(numbers4);
+                        long nano_endTime4 = System.nanoTime();
+                        System.out.println("Tiempo en ordenar con datos desordenados: " + (nano_endTime4 - nano_startTime4));
+
+                        nano_startTime4 = System.nanoTime();
+                        test4 = sorts.bubbleSort(test4);
+                        nano_endTime4 = System.nanoTime();
+                        System.out.println("Tiempo en ordenar con datos ordenados: " + (nano_endTime4 - nano_startTime4));
+
+                        n4 += 55;
+                    }
                     break;
                 case 7:
                     exit = true;
